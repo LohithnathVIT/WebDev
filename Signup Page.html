@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(140deg, #a6c4e1,#051a30);
+        }
+
+        .signup-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fafcfc;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-container h1 {
+            font-size: 24px;
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .signup-container h6 {
+            font-size: 14px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup-form label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .signup-form input {
+            width: 95%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .signup-form input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .terms {
+            display: inline;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .terms input {
+            margin-right: 10px;
+        }
+
+        .terms a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007bff;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: 0.5s;
+        }
+
+        .signup-form button:hover {
+            background-color: #000000;
+        }
+
+        .signup-form button[type="reset"] {
+            background-color: #434c53;
+        }
+
+        .signup-form button[type="reset"]:hover {
+            background-color: #212427;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <h6>Please fill in this form to create an account!</h6>
+        <form class="signup-form" action="login.html" method="post">
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="username" placeholder="Enter your username" required>
+
+            <label for="Email">Email Address</label>
+            <input type="email" id="Email" name="email" placeholder="Enter your email" required>
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password" placeholder="Enter your password" required>
+
+            <label for="repass">Confirm Password</label>
+            <input type="password" id="repass" name="repassword" placeholder="Confirm your password" required>
+
+            <table>
+                <tr>
+                    <td>
+                        <div class="terms">
+                            <input type="checkbox" id="check" name="terms" required>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="terms">
+                            <label for="check" style="margin-right: 120px;">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <button type="submit">Sign Up</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
