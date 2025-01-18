@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 0;
+            padding: 15px;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            color: #333;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 1.3em;
+            font-weight: 600;
+            background-color: #b2ebf2;
+        }
+
+        div {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        ol, ul, dl {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        ol {
+            list-style-position: inside;
+            font-size: 1.1em;
+        }
+
+        li.theory {
+            background-color: #e1f5fe;
+            color: #0277bd;
+            font-weight: bold;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        li.lab {
+            background-color: #dcedc8;
+            color: #388e3c;
+            font-style: italic;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        li.theory:hover {
+            background-color: #b3e5fc;
+        }
+
+        li.lab:hover {
+            background-color: #c5e1a5;
+        }
+
+        ul.programming-languages {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul.programming-languages li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul.programming-languages li:hover {
+            background-color: #f1f8e9;
+        }
+
+        ul.programming-languages img {
+            margin-right: 15px;
+            width: 32px;
+            height: 32px;
+            border-radius: 5px;
+        }
+
+        dl dt {
+            margin-bottom: 15px;
+            padding-left: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        dl dd {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 10px;
+            padding-left: 12px;
+        }
+
+        dt {
+            border-left: 4px solid #0288d1;
+            padding-left: 12px;
+            margin-bottom: 8px;
+        }
+
+        dt:first-child {
+            border-left-color: #004d40;
+        }
+
+        dt:nth-child(3) {
+            border-left-color: #f57c00;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>List of My Favorites</h1>
+
+    <div>
+        <h2>Courses in Winter Semester</h2>
+        <ol>
+            <li class="theory">Web Programming</li>
+            <li class="theory">Design and Analysis of Algorithms</li>
+            <li class="theory">Computer Architecture and Organisation</li>
+            <li class="theory">Microprocessors and Microcontrollers</li>
+            <li class="theory">Probability and Statistics</li>
+            <li class="theory">Quantitative Skills Practice II</li>
+            <li class="lab">Web Programming LAB</li>
+            <li class="lab">Design and Analysis of Algorithms LAB</li>
+            <li class="lab">Microprocessors and Microcontrollers LAB</li>
+            <li class="lab">Probability and Statistics LAB</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>Programming Languages</h2>
+        <ul class="programming-languages">
+            <li><img src="icons8-c-programming.svg" alt="C Logo"> C Language -- 9/10</li>
+            <li><img src="icons8-c++.svg" alt="C++ Logo"> C++ -- 8.5/10</li>
+            <li><img src="icons8-python.svg" alt="Python Logo"> Python -- 7/10</li>
+            <li><img src="icons8-java.svg" alt="Java Logo"> Java -- NA</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>My Favorite Shows, Movies, and Books</h2>
+        <dl>
+            <dt>DARK (TV Show)</dt>
+            <dd>A mind-bending German sci-fi thriller exploring time travel, paradoxes, and family connections. Its intricate storytelling keeps you hooked, unraveling the mysteries of Winden across generations.</dd>
+            
+            <dt>Interstellar (Movie)</dt>
+            <dd>A visually stunning journey through space and time, highlighting humanity's resilience. Christopher Nolan masterfully combines emotional depth with scientific intrigue in this epic adventure.</dd>
+
+            <dt>Sherlock Holmes (Book Series)</dt>
+            <dd>Sir Arthur Conan Doyle's iconic detective solves intricate mysteries with wit and deduction. Each tale immerses you in Victorian London, brimming with suspense and clever twists.</dd>
+        </dl>
+    </div>
+
+</body>
+</html>
