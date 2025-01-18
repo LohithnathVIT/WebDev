@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements</title>
+</head>
+
+<body>
+    <h1>HTML5 Elements</h1>
+
+    <label for="textbox">Text Box:</label>
+    <input type="text" id="textbox" name="textbox" placeholder="Enter text here">
+    <br><br>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Select Interests</legend>
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <br>
+        <label for="music">Music</label>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <br>
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="reading" name="interest" value="reading">
+    </fieldset>
+    <br>
+
+    <label for="selection">Select Your Favorite Fruit:</label>
+    <select id="selection" name="fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+        <option value="date">Date</option>
+        <option value="elderberry">Elderberry</option>
+    </select>
+    <br><br>
+
+    <label for="options">Choose a Language:</label>
+    <select id="options" name="language">
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+    </select>
+    <br><br>
+
+    <label for="textarea">Text Area:</label>
+    <br>
+    <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Write something here..."></textarea>
+    <br>
+    <br>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname">
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0">
+    </fieldset>
+    <br>
+
+    <label for="browsers">Choose a Browser:</label>
+    <input list="browserlist" id="browsers" name="browser">
+    <datalist id="browserlist">
+        <option value="Google Chrome">
+        <option value="Mozilla Firefox">
+        <option value="Safari">
+        <option value="Opera">
+        <option value="Microsoft Edge">
+    </datalist>
+    <br><br>
+
+    <button type="submit">Submit</button>
+</body>
+
+</html>
