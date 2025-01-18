@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+
+        td{
+            border: 2px solid black;
+            text-align: center;
+            height: 3em;
+            width: 6em;
+            padding: 0.8em;
+            font: 1em sans-serif;
+            font-size: 0.7em;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+        
+        .sixth > *{
+            border: none;
+        }
+
+        #none{
+            border: none;
+        }
+
+        #text{
+            font: 1em sans-serif; 
+            color: brown;
+        }
+
+        tr:hover{
+            color: rgb(114, 112, 112);
+
+        }
+
+        #col{
+            background-color: rgb(64, 64, 198);
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td colspan="2" rowspan="2"><img src="Web Development Logo.jpeg" alt="Web Dev" height="40px"></td>
+            <td colspan="1" id = "col">r1 c3</td>
+            <td rowspan="2" id="text"><b><i>"I am Brave"</i></b></td>
+            <td rowspan="2" colspan="2">r1 c5</td>
+            <td id="none"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><a href="https://mail.google.com">lohith@gmail.com</a></td>
+            <td id="none"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="Home.html">Home.html</a></td>
+            <td colspan="2"><a href="https://www.google.com/"><img src="Web Development Logo.jpeg" height="40px"></a>
+            </td>
+            <td>r3 c6</td>
+            <td id="none"></td>
+        </tr>
+        <tr>
+            <td colspan="1" id = "col">r4 c1</td>
+            <td colspan="2" id = "col">r4 c2</td>
+            <td rowspan="2">r4 c4</td>
+            <td colspan="2">r4 c5</td>
+            <td id="none"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2" id = "col">r5 c1</td>
+            <td rowspan="2" id="text"><b><i>"I am Strong"</i></b></td>
+            <td colspan="2" rowspan="2" id="text"><b><i>"I am Brave"</i></b></td>
+            <td id="none"></td>
+        </tr>
+        <tr>
+            <td id="text"><b><i>"I am Best"</i></b></td>
+            <td id="none"></td>
+        </tr>
+        <tr class="sixth">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
+

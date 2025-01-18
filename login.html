@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(140deg, #052552, #7ba5e8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #f9fafb;
+        }
+
+        .login-container {
+            background-color: #f4f4ff;
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 25px 30px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            font-size: 2rem;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-container label {
+            display: block;
+            text-align: left;
+            width: 100%;
+            font-size: 0.9rem;
+            color: #374151;
+            margin-bottom: 5px;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #416cc0;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #030508;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+
+        .login-container p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 10px;
+        }
+
+        .login-container p a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        .login-container p a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .login-container h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="tempper.html" method="get">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="show-password" onclick="togglePasswordVisibility()">
+                <label for="show-password">Show Password</label>
+            </div>
+
+            <input type="submit" value="Sign In">
+        </form>
+        <p>Forgot <a href="#">Username/Password</a>?</p>
+        <p>Don't have an account? <a href="Signup Page.html">Sign Up</a></p>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const password = document.getElementById("password");
+            password.type = password.type === "password" ? "text" : "password";
+        }
+    </script>
+</body>
+</html>
